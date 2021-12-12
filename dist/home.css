@@ -113,7 +113,7 @@ div#header #personcard #pic{
     width: 100%;
     height: 100%;
 
-    background-image: url(../../IMG_5613.JPG);
+    background-image: url(../pictures/Personpic.JPG);
     background-size: cover;
     background-position: center;
 
@@ -223,8 +223,23 @@ div#projects{
 
 
     background-color: #f5f0dc;
-    visibility: hidden;
 }
+
+div#projects #close{
+    width: 50px;
+    height: 50px;
+    
+    position: absolute;
+    
+    right: 0;
+    top: 0px;
+    
+    font-family: monospace;
+    font-size: 50px;
+    cursor: pointer;
+    
+}
+
 div#projects #content{
     width: 80vw;
 
@@ -239,6 +254,13 @@ div#projects #content{
      overflow-y: scroll;
 
 }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+div#projects #content::-webkit-scrollbar {
+  display: none;
+}
+
+
 div#projects #content #title{
     position: relative;
     width: 50%;
@@ -258,6 +280,8 @@ div#projects #content ul{
     top: 100px;
 
     list-style: none;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 
 
 }
@@ -311,8 +335,6 @@ div#projects #content ul li #prijectpicture{
 
     position: relative;
 
-
-    background-image: url(../../Shedbolaget.png);
     background-size: cover;
     background-position: center;
 
