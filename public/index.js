@@ -53,6 +53,7 @@ const firebaseConfig = {
 
   $('#projectsbutton').on('click', function(){
     projectsWindow.fadeIn(200);
+    $('body').scrollTop();
   });
 
   $('#close').on('click', function(){

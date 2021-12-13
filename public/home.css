@@ -1,0 +1,713 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+html{
+    overflow: hidden;
+}
+
+
+/*----------------------------- HEADER -----------------------------------------*/
+div#header{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f5f0dc;
+
+    position: absolute;
+
+
+}
+div#rotate{
+    width: 2000px;
+    height: 1000px;
+    background-color: white;
+
+    transform: rotate(-40deg);
+
+    position: absolute;
+
+
+
+}
+div#header h1{
+    position: absolute;
+
+    font-size: 90px;
+    font-family: monospace;
+
+    right: 45vw;
+    top: 30vh;
+}
+div#header #title2{
+    position: absolute;
+
+    font-size: 60px;
+    font-family: monospace;
+
+    left: 44vw;
+    top: 40vh;
+}
+div#header #personinformation{
+    width: 30vw;
+    position: absolute;
+
+    text-align: center;
+
+    right: 30vw;
+    top: 70vh;
+
+    background-color: white;
+
+    box-shadow: -8px 8px 20px 1px rgba(0, 0, 0, 0.2);
+
+    padding: 20px;
+
+    font-size: 17px;
+    font-family: monospace;
+}
+
+
+/*------- Rotated square ------------*/
+div#rotationContainer{
+    position: absolute;
+    left: 500px;
+    top: 350px;
+}
+/*------- Person Card ------------*/
+div#header #personcard{
+    width: 400px;
+    height: 700px;
+    background-color: #fffff8;
+
+    overflow: hidden;
+
+
+    position: absolute;
+
+    left: 7vw;
+    top: 7vh;
+
+    box-shadow: -8px 8px 20px 1px rgba(0, 0, 0, 0.2);
+
+
+}
+/*Picture*/
+div#header #personcard #piccontainer{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    left: 13%;
+    top: 5%;
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+}
+div#header #personcard #pic{
+    width: 100%;
+    height: 100%;
+
+    background-image: url(pictures/Personpic.JPG);
+    background-size: cover;
+    background-position: center;
+
+
+
+}
+
+/*Information*/
+div#header #personcard #infoContainer{
+    position: relative;
+    top: 40px;
+
+    widows: 80%;
+
+}
+div#header #personcard #infoContainer #nameContainer{
+
+    border-left: 3px solid grey;
+    border-right: 3px solid grey;
+
+
+    width: 70%;
+    position: relative;
+    left: 15%;
+
+}
+div#header #personcard #firstname{
+    width: 100%;
+    text-align: center;
+    font-family: monospace;
+    font-size: 40px;
+}
+div#header #personcard #lastname{
+    width: 100%;
+    text-align: center;
+    font-family: monospace;
+    font-size: 40px;
+}
+
+div#header #personcard #socialmedia{
+    position: absolute;
+    bottom: 0;
+
+    height: 80px;
+    width: 100%;
+    background-color: antiquewhite;
+}
+div#header #personcard #occupation{
+    width: 100%;
+    position: relative;
+    text-align: center;
+
+    font-size: 30px;
+
+    top: 40px;
+
+    font-family: monospace;
+}
+
+/* Buttons */
+.button{
+
+    width: 150px;
+    height: 70px;
+    margin-left: 10px;
+
+    position: relative;
+
+    left: 0;
+
+    border: 3px solid black;
+
+    transition-duration: 0.4s;
+
+    font-family: monospace;
+
+    font-size: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+#buttoncontainer{
+    width: 30vw;
+    height: 5vw;
+
+    display: flex;
+
+    position: relative;
+    left: 40vw;
+    top: 50vh;
+
+}
+.button:hover{
+    background-color: black;
+
+    color: white;
+}
+#projectsbutton{
+    position: relative;
+    right:  550px;;
+}
+
+/*----------------------------- Projects -----------------------------------------*/
+
+div#projects{
+    position: absolute;
+    left: 0;
+    top: 0vh;;
+
+    width: 100vw;
+    height: 100vh;
+
+
+    background-color: #f5f0dc;
+}
+div#projects #close{
+    width: 50px;
+    height: 50px;
+    
+    position: absolute;
+    
+    right: 0;
+    top: 0px;
+    
+    font-family: monospace;
+    font-size: 50px;
+    cursor: pointer;
+    
+}
+div#projects #content{
+    width: 80vw;
+
+    position: relative;
+    left: 10vw;
+    top: 0vh;
+
+    height: 100vh;
+
+    background-color: white;
+    box-shadow: 0px 0pc 20px 1px rgba(0, 0, 0, 0.2);
+     overflow-y: scroll;
+
+}
+div#projects #content::-webkit-scrollbar {
+  display: none;
+}
+div#projects #content #title{
+    position: relative;
+    width: 50%;
+    top: 40px;
+
+    text-align: center;
+
+    font-size: 60px;
+
+    font-family: monospace;
+}
+div#projects #content ul{
+    width: 90%;
+    height: 100%;
+    position: relative;
+    left: 5%;
+    top: 100px;
+
+    list-style: none;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+
+
+}
+div#projects #content ul li{
+    width: 100%;
+    height: 350px;
+    margin-bottom: 50px;
+
+    background-color: antiquewhite;
+
+    box-shadow: 0px 0pc 20px 1px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+
+
+}
+div#projects #content ul li #projectinformation{
+
+    position: relative;
+    left: 20px;
+    width: 70%;
+    top: 0;
+}
+div#projects #content ul li #projecttitle{
+    margin: 30px;
+    font-size: 30px;
+
+    font-family: monospace;
+    position: relative;
+
+}
+div#projects #content ul li #projectdescription{
+    width: 90%;
+
+    position: relative;
+
+
+    top: 20px;
+
+    font-size: 17px;
+
+
+    font-family: monospace;
+}
+
+div#projects #content ul li #prijectpicture{
+
+    position: relative;
+
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+
+   left: 8px;
+    height: 350px;
+    width: 40%;
+
+}
+
+
+/*----------------------------- CV -----------------------------------------*/
+div#cv{
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: #f5f0dc;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: center;
+
+    overflow-y: scroll;
+
+    
+
+}
+
+
+
+div#cv  #closebutton{
+    width: 50px;
+    height: 50px;
+
+    position: absolute ;
+    right: 0;
+    top: 0;
+
+    font-family: monospace;
+    font-size: 60px;
+    text-align: center;
+
+    cursor: pointer;
+}
+
+div#cv .cvcomponent{
+    width: 80%;
+    
+   
+    
+    background-color: white;
+
+    margin: 20px;
+
+
+    
+
+
+}
+
+
+div#cv .cvcomponent#startcomponent{
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+
+    height: 600px;
+}
+div#cv .cvcomponent#startcomponent #general{
+    position: relative;
+    top: 30%;
+    width: 40%;
+    height: 40%;
+    box-shadow: -8px 8px 20px 1px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div#cv .cvcomponent#startcomponent #general #namecontainer{
+    display: flex;
+
+    justify-content: center;
+
+    width: 50%;
+    
+    position: relative;
+
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+
+    flex-direction: column;
+    align-items: center;
+
+
+    font-family: monospace;
+    font-size: 40px;
+
+    
+
+}
+div#cv .cvcomponent#startcomponent #general #namecontainer h3{
+    position: relative;
+}
+div#cv .cvcomponent#startcomponent #picture{
+    height: 600px;
+    width: 600px;
+
+    background-size: cover;
+    background-position: bottom;
+
+    position: relative;
+    left: 70px;
+
+    background-image: url(pictures/Personpic.JPG);
+
+    border-radius: 50%;
+}
+
+
+
+div#cv .cvcomponent#personalletter{
+    box-shadow: -8px 8px 20px 1px rgba(0, 0, 0, 0.2);
+    height: 500px;
+}
+
+
+div#cv .cvcomponent#personalletter #middletitle{
+    width: 100%;
+    text-align: center;
+    font-family: monospace;
+
+    font-size: 40px;
+
+}
+
+div#cv .cvcomponent#personalletter #discrption{
+    width: 80%;
+    height: 70%;
+
+    position: relative;
+    left: 10%;
+    top: 50px;
+
+    font-size: 20px;
+
+    font-family: monospace;
+}
+
+@media screen and (max-width: 1300px) {
+    .button{
+
+       
+    }
+    div#header h1{
+    
+        right: 35vw;
+        top: 30vh;
+    }
+    div#header #title2{
+    
+        left: 50vw;
+        top: 40vh;
+    }
+    div#header #personinformation{
+        
+    
+        right: 20vw;
+        top: 70vh;
+    
+    
+    }
+
+    div#header #buttoncontainer{
+        left: 50vw;
+    }
+
+
+    div#projects #content{
+        width: 100vw;
+        left: 0;
+        
+    
+    }
+    div#projects #content::-webkit-scrollbar {
+      display: none;
+    }
+    div#projects #content #title{
+        width: 100%;
+        align-items: center;
+    }
+    
+    
+
+    
+    
+}
+@media screen and (max-width: 1100px) {
+
+    div#header h1{
+    
+        right: 25vw;
+    }
+    div#header #title2{
+    
+        left: 60vw;
+    }
+    div#header #personinformation{
+        
+    
+        right: 10vw;
+    
+    
+    }
+
+    div#header #buttoncontainer{
+        left: 60vw;
+    }
+    div#projects{
+        height: 1500px;
+    }
+
+
+
+    div#projects #content{
+        width: 100vw;
+        
+        left: 0;
+
+        display: flex;
+        flex-direction: column;
+
+        height: 100%;
+        
+    
+    }
+
+
+
+
+    div#projects #content #title{
+        width: 100%;
+        align-items: center;
+    }
+    
+    div#projects #content ul li{
+        overflow: hidden;
+
+        display: flex;
+        flex-direction: column;
+        height: 600px;
+
+        justify-content: center;
+        align-items: center;
+    
+    
+    }
+    div#projects #content ul li #projectinformation{
+        position: relative;
+        
+        margin: 0;
+        padding: 0;
+        top: 0;
+        left: 0;
+        width: 95%;
+        
+    }
+    div#projects #content ul li #projecttitle{
+        position: relative;
+        width: 100%;
+        text-align: center;
+        top: 0;
+        left: 0;
+    }
+    div#projects #content ul li #projectdescription{
+        position: relative;
+        width: 100%;
+        text-align: center;
+        top: 0;
+        left: 0;
+    }
+    
+    div#projects #content ul li #prijectpicture{
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 80%;
+        
+
+        background-color: white;
+    }
+    
+}
+@media screen and (max-width: 950px) {
+    html{
+        overflow-y: scroll;
+        height: 1500px;
+    }
+    div#header {
+        display: flex;
+        height: 1500px;
+        flex-direction: column;
+    }
+    div#header h1{
+    position: relative;
+    width: 100%;
+    text-align: center;
+
+    margin-top: 200px;
+    left: 0;;
+    top: 0;
+        
+    }
+    div#header #title2{
+        position: relative;
+        width: 100%;
+        text-align: center;
+
+        left: 0;;
+        top: 0;
+    }
+    div#header #personinformation{
+        position: relative;
+        width: 100%;
+        top: 0;
+        left: 0;
+
+        margin-top: 50px;
+        margin-bottom: 50px;
+    
+    
+    }
+
+    div#header #buttoncontainer{
+        position: relative;
+        left: 0;;
+    top: 0;
+    width: 100%;display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    }
+    div#header #personcard {
+        position: relative;
+
+
+        width: 350px;
+        left: 10vw;
+
+        top: 0;
+        left: 0;
+        margin-left: 10vw;
+        margin-top: 5vh;
+       
+    
+    }
+    div#header #personcard #piccontainer{
+        width: 200px;
+        height: 200px;
+        left: 80px;
+    }
+    div#rotationContainer{
+        visibility: hidden;
+        display: none;
+    }
+    
+}
